@@ -1,0 +1,36 @@
+{
+  "name": "editorjs-align-blocktune",
+  "description": "Text alignment block tune tool for Editor.js",
+  "author": "greenbabyborn",
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [
+    "codex editor",
+    "alignment",
+    "editor.js",
+    "editorjs"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/align-blocktune.umd.cjs",
+  "module": "./dist/align-blocktune.js",
+  "exports": {
+    ".": {
+      "import": "./dist/align-blocktune.js",
+      "require": "./dist/align-blocktune.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-css-injected-by-js": "^3.3.0"
+  },
+  "dependencies": {
+    "@codexteam/icons": "^0.3.0"
+  }
+}
